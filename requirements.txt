@@ -2,4 +2,5 @@ sphinx==4.5.0
 sphinx-rtd-theme==1.1.1
 gitpython==3.1.30
 sphinxemoji
-lasso.issues~=1.0.0
+# lasso.issues~=1.0.1
+git+https://github.com/NASA-PDS/lasso-issues@main#egg=lasso.issues
