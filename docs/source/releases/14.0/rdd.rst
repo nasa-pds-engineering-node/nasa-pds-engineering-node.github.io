@@ -362,9 +362,9 @@ Bugs
 +============================================================================+====================+==========================+
 |`pds-api#260`_ PDS API documents are unclear wrt quoting in queries         ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------+--------------------+--------------------------+
-|`pds-api#262`_ PDS API is not respecting the sort field                     ||:yellow_circle:|   |unknown                   |
-+----------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds-api#259`_ API search returns 500 for anything besides simple queries   ||:yellow_circle:|   |unknown                   |
++----------------------------------------------------------------------------+--------------------+--------------------------+
+|`pds-api#262`_ PDS API is not respecting the sort field                     ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -396,9 +396,9 @@ Bugs
 +-------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                          |I&T Status          |Priority / Bug Severity   |
 +===============================================================================+====================+==========================+
-|`pds4-information-model#658`_ Bug trying to generate LDD and missing files     ||:yellow_circle:|   |s.high                    |
-+-------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds4-information-model#661`_ LDDTool fails for dependent LDDs since v14.2.0   ||:yellow_circle:|   |s.critical                |
++-------------------------------------------------------------------------------+--------------------+--------------------------+
+|`pds4-information-model#658`_ Bug trying to generate LDD and missing files     ||:yellow_circle:|   |s.high                    |
 +-------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -466,7 +466,7 @@ Bugs
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                              |I&T Status          |Priority / Bug Severity   |
 +===================================================================================================+====================+==========================+
-|`registry-api#355`_ api does not return information that OpenSearch says is public                 ||:yellow_circle:|   |s.high                    |
+|`registry-api#305`_ API not returning value for NAIF bundles                                       ||:green_circle:|    |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#296`_ API crashes with JVM memory error on data sets with very large labels (>1MB)   ||:green_circle:|    |s.medium                  |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
@@ -474,9 +474,9 @@ Bugs
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#262`_ the request url in the error message does not make sense                       ||:yellow_circle:|   |s.low                     |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#341`_ members of a bundle does not work on new test dataset                          ||:yellow_circle:|   |s.high                    |
+|`registry-api#355`_ api does not return information that OpenSearch says is public                 ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#305`_ API not returning value for NAIF bundles                                       ||:green_circle:|    |s.high                    |
+|`registry-api#341`_ members of a bundle does not work on new test dataset                          ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#277`_ Product summary object has an incomplete "properties" set                      ||:green_circle:|    |s.medium                  |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
@@ -670,19 +670,19 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                   |I&T Status          |Priority / Bug Severity   |
 +========================================================================================================================+====================+==========================+
-|`validate#561`_ Validate incorrectly enforces file naming requirements on bundles/collections                           ||:green_circle:|    |s.low                     |
+|`validate#500`_ Validate does not allow `.arch_h` file name/data type                                                   ||:yellow_circle:|   |s.low                     |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#479`_ validate erroneously flags PDF/A-1a compliant file                                                      ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#652`_ validate 3.3.0 snapshot produces incorrect SKIP/INFO messages                                           ||:green_circle:|    |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#500`_ Validate does not allow `.arch_h` file name/data type                                                   ||:yellow_circle:|   |s.low                     |
-+------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#649`_ validate does not validate a collection if collection.xml pointed to                                    ||:yellow_circle:|   |s.medium                  |
+|`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                        ||:green_circle:|    |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#631`_ Expected value in validate report for context reference name is not same as value in the context file   ||:green_circle:|    |s.low                     |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                        ||:green_circle:|    |s.medium                  |
+|`validate#561`_ Validate incorrectly enforces file naming requirements on bundles/collections                           ||:green_circle:|    |s.low                     |
++------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#652`_ validate 3.3.0 snapshot produces incorrect SKIP/INFO messages                                           ||:green_circle:|    |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#649`_ validate does not validate a collection if collection.xml pointed to                                    ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -693,13 +693,13 @@ Requirements
 +===========================================================================================================================================+====================+==========================+
 |`validate#462`_ As a user, I want validate to throw an error when a collection inventory contains an invalid secondary product reference   ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#651`_ As a user, I want to support bit patterns within Special_Constants values                                                  ||:yellow_circle:|   |p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#617`_ As a user, I would like to enforce browse file extension with encoding type                                                ||:yellow_circle:|   |p.should-have             |
+|`validate#599`_ As a user, I want to be able to use both online and local schema/schematron files.                                         ||:yellow_circle:|   |p.could-have              |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#658`_ As a user, I want the PDF error reports to be output in a user-specified directory                                         ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#599`_ As a user, I want to be able to use both online and local schema/schematron files.                                         ||:yellow_circle:|   |p.could-have              |
+|`validate#617`_ As a user, I would like to enforce browse file extension with encoding type                                                ||:yellow_circle:|   |p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#651`_ As a user, I want to support bit patterns within Special_Constants values                                                  ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
@@ -878,19 +878,19 @@ as follows:
 .. _operations#413: https://github.com/NASA-PDS/operations/issues/413
 .. _operations#378: https://github.com/NASA-PDS/operations/issues/378
 .. _pds-api#260: https://github.com/NASA-PDS/pds-api/issues/260
-.. _pds-api#262: https://github.com/NASA-PDS/pds-api/issues/262
 .. _pds-api#259: https://github.com/NASA-PDS/pds-api/issues/259
-.. _pds4-information-model#658: https://github.com/NASA-PDS/pds4-information-model/issues/658
+.. _pds-api#262: https://github.com/NASA-PDS/pds-api/issues/262
 .. _pds4-information-model#661: https://github.com/NASA-PDS/pds4-information-model/issues/661
+.. _pds4-information-model#658: https://github.com/NASA-PDS/pds4-information-model/issues/658
 .. _registry#143: https://github.com/NASA-PDS/registry/issues/143
 .. _registry#213: https://github.com/NASA-PDS/registry/issues/213
 .. _registry#180: https://github.com/NASA-PDS/registry/issues/180
-.. _registry-api#355: https://github.com/NASA-PDS/registry-api/issues/355
+.. _registry-api#305: https://github.com/NASA-PDS/registry-api/issues/305
 .. _registry-api#296: https://github.com/NASA-PDS/registry-api/issues/296
 .. _registry-api#343: https://github.com/NASA-PDS/registry-api/issues/343
 .. _registry-api#262: https://github.com/NASA-PDS/registry-api/issues/262
+.. _registry-api#355: https://github.com/NASA-PDS/registry-api/issues/355
 .. _registry-api#341: https://github.com/NASA-PDS/registry-api/issues/341
-.. _registry-api#305: https://github.com/NASA-PDS/registry-api/issues/305
 .. _registry-api#277: https://github.com/NASA-PDS/registry-api/issues/277
 .. _registry-api#336: https://github.com/NASA-PDS/registry-api/issues/336
 .. _registry-loader#26: https://github.com/NASA-PDS/registry-loader/issues/26
@@ -914,18 +914,18 @@ as follows:
 .. _validate#643: https://github.com/NASA-PDS/validate/issues/643
 .. _validate#629: https://github.com/NASA-PDS/validate/issues/629
 .. _validate#628: https://github.com/NASA-PDS/validate/issues/628
-.. _validate#561: https://github.com/NASA-PDS/validate/issues/561
-.. _validate#479: https://github.com/NASA-PDS/validate/issues/479
-.. _validate#652: https://github.com/NASA-PDS/validate/issues/652
 .. _validate#500: https://github.com/NASA-PDS/validate/issues/500
-.. _validate#649: https://github.com/NASA-PDS/validate/issues/649
-.. _validate#631: https://github.com/NASA-PDS/validate/issues/631
+.. _validate#479: https://github.com/NASA-PDS/validate/issues/479
 .. _validate#644: https://github.com/NASA-PDS/validate/issues/644
+.. _validate#631: https://github.com/NASA-PDS/validate/issues/631
+.. _validate#561: https://github.com/NASA-PDS/validate/issues/561
+.. _validate#652: https://github.com/NASA-PDS/validate/issues/652
+.. _validate#649: https://github.com/NASA-PDS/validate/issues/649
 .. _validate#462: https://github.com/NASA-PDS/validate/issues/462
-.. _validate#651: https://github.com/NASA-PDS/validate/issues/651
-.. _validate#617: https://github.com/NASA-PDS/validate/issues/617
-.. _validate#658: https://github.com/NASA-PDS/validate/issues/658
 .. _validate#599: https://github.com/NASA-PDS/validate/issues/599
+.. _validate#658: https://github.com/NASA-PDS/validate/issues/658
+.. _validate#617: https://github.com/NASA-PDS/validate/issues/617
+.. _validate#651: https://github.com/NASA-PDS/validate/issues/651
 .. _validate#567: https://github.com/NASA-PDS/validate/issues/567
 .. _wds-react#88: https://github.com/NASA-PDS/wds-react/issues/88
 .. _web-analytics#3: https://github.com/NASA-PDS/web-analytics/issues/3
